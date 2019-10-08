@@ -55,6 +55,7 @@ import QtQuick.Controls.Private 1.0
 import QtQuick.Controls.Styles 1.1
 import org.qtproject.examples.calendar 1.0
 import QtGraphicalEffects 1.13
+//import "../selectionScreen.qml"
 
 
 
@@ -609,5 +610,35 @@ ApplicationWindow {
             }
         }
     }
+
+    ToolButton {
+        id: toolButton
+        x: 653
+        y: 117
+        width: 79
+        height: 30
+        onClicked: pageLoader.source = "selectionScreen.qml"
+        Loader { id: pageLoader }
+
+        Rectangle{
+            width: parent.width
+            height: parent.height
+            color: "grey"
+        }
+    }
+
+    Rectangle {
+        id: tester
+        x: 809
+        y: 118
+        width: 206
+        height: 51
+        color: "#ffffff"
+    }
+
+
+
+
+
 }
 
