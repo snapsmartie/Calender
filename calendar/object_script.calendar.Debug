@@ -1,0 +1,11 @@
+debug/event.o
+debug/main.o
+debug/sqleventmodel.o
+debug/qrc_resources_qmlcache.o
+debug/qml_calender_qml.o
+debug/qml_clock_qml.o
+debug/qml_thermostate_qml.o
+debug/qml_main_qml.o
+debug/qmlcache_loader.o
+debug/moc_event.o
+debug/moc_sqleventmodel.o

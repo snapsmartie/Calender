@@ -13,6 +13,7 @@ target.path = $$[QT_INSTALL_EXAMPLES]/quickcontrols/controls/calendar
 INSTALLS += target
 
 DISTFILES += \
-    qml/keyboard.qml \
-    qml/selectionScreen.qml \
-    qml/themes.qml
+    qml/calender.qml \
+    qml/clock.qml \
+    qml/themes.qml \
+    qml/thermostate.qml

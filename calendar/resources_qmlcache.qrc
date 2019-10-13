@@ -2,5 +2,10 @@
 <RCC>
     <qresource prefix="/">
         <file alias="images/eventindicator.png">images/eventindicator.png</file>
+        <file alias="fonts/DINPro-Light_13935.ttf">fonts/DINPro-Light_13935.ttf</file>
+        <file alias="fonts/Elianto-Regular.ttf">fonts/Elianto-Regular.ttf</file>
+        <file alias="fonts/Mylodon-Light.otf">fonts/Mylodon-Light.otf</file>
+        <file alias="fonts/Stellar-Bold.otf">fonts/Stellar-Bold.otf</file>
+        <file alias="fonts/Stellar-light.otf">fonts/Stellar-light.otf</file>
     </qresource>
 </RCC>

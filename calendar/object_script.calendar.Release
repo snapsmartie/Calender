@@ -1,0 +1,11 @@
+release/event.o
+release/main.o
+release/sqleventmodel.o
+release/qrc_resources_qmlcache.o
+release/qml_calender_qml.o
+release/qml_clock_qml.o
+release/qml_thermostate_qml.o
+release/qml_main_qml.o
+release/qmlcache_loader.o
+release/moc_event.o
+release/moc_sqleventmodel.o
