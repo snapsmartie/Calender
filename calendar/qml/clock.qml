@@ -1,6 +1,7 @@
 import QtQuick 2.12
 import QtGraphicalEffects 1.12
 import QtQuick.Controls 2.5
+import "../"
 
 
 Rectangle {
@@ -23,27 +24,26 @@ Rectangle {
 
         Text {
             id: digitalClock
-            font.pixelSize: 240
+            font.pixelSize: 200
             font.family: webFont.name
             color: "white"
             text: ""
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.horizontalCenter: parent.horizontalCenter
             font.bold: true
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
-            visible: false
+            visible: true
             antialiasing: true
         }
 
-        InnerShadow {
-            anchors.fill: digitalClock
-            radius: 3.5
-            samples: 16
-            horizontalOffset: -3
-            verticalOffset: 2
-            color: "#d0000000"
-            antialiasing: true
-            source: digitalClock
-        }
+//        Glow {
+//            anchors.fill: digitalClock
+//            radius: 1
+//            samples: 5
+//            color: "grey"
+//            source: digitalClock
+//        }
 
 
         Timer{
@@ -54,6 +54,15 @@ Rectangle {
                 var date = new Date()
                 digitalClock.text = date.toLocaleTimeString(Qt.locale("de_DE"), "hh:mm:ss")
             }
+        }
+
+        Text {
+            id: element
+            x: 397
+            y: 79
+            color: "#f2e6e6"
+            //text: thermostate.temperature
+            font.pixelSize: 86
         }
     }
     Rectangle{

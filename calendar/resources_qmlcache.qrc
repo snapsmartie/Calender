@@ -7,5 +7,9 @@
         <file alias="fonts/Mylodon-Light.otf">fonts/Mylodon-Light.otf</file>
         <file alias="fonts/Stellar-Bold.otf">fonts/Stellar-Bold.otf</file>
         <file alias="fonts/Stellar-light.otf">fonts/Stellar-light.otf</file>
+        <file alias="images/heaterOn.png">images/heaterOn.png</file>
+        <file alias="images/arrow.png">images/arrow.png</file>
+        <file alias="images/thermoMeter.png">images/thermoMeter.png</file>
+        <file alias="images/sunCloud.png">images/sunCloud.png</file>
     </qresource>
 </RCC>

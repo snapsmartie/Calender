@@ -1,11 +1,17 @@
 debug/event.o
 debug/main.o
+debug/scedule_Settings.o
 debug/sqleventmodel.o
+debug/thermostate.o
 debug/qrc_resources_qmlcache.o
 debug/qml_calender_qml.o
 debug/qml_clock_qml.o
+debug/qml_weather_qml.o
 debug/qml_thermostate_qml.o
+debug/qml_Scedule_Settings_qml.o
 debug/qml_main_qml.o
 debug/qmlcache_loader.o
 debug/moc_event.o
+debug/moc_scedule_Settings.o
 debug/moc_sqleventmodel.o
+debug/moc_thermostate.o

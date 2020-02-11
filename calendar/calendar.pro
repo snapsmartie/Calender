@@ -15,5 +15,11 @@ INSTALLS += target
 DISTFILES += \
     qml/calender.qml \
     qml/clock.qml \
+    qml/scedule_Settings.qml \
     qml/themes.qml \
-    qml/thermostate.qml
+    qml/thermostate.qml \
+    qml/weather.qml
+
+SOURCES +=
+
+HEADERS +=

@@ -10,5 +10,11 @@
         <file>fonts/Stellar-Bold.otf</file>
         <file>fonts/Stellar-light.otf</file>
         <file>qml/thermostate.qml</file>
+        <file>images/heaterOn.png</file>
+        <file>images/arrow.png</file>
+        <file>qml/Scedule_Settings.qml</file>
+        <file>qml/weather.qml</file>
+        <file>images/thermoMeter.png</file>
+        <file>images/sunCloud.png</file>
     </qresource>
 </RCC>

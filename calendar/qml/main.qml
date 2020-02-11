@@ -57,13 +57,14 @@ import org.qtproject.examples.calendar 1.0
 import QtGraphicalEffects 1.13
 
 
-ApplicationWindow {
+Rectangle {
     id: applicationWindow
+    objectName: "appWindow"
     visible: true
     width: 1200
     height: 800
-    minimumWidth: 400
-    minimumHeight: 300
+    //minimumWidth: 400
+   // minimumHeight: 300
     color: "#000000"
     Rectangle{
         id:mainFrame
@@ -78,22 +79,30 @@ ApplicationWindow {
             Item {
                 Loader{
                     id: firstpage
+                    objectName: "firstpage"
                     source:"thermostate.qml"
                     anchors.fill: parent
                 }
             }
             Item {
-                                Loader{
-                                    id: secondpage
-                                    source:"clock.qml"
-                                    anchors.fill: parent
-                                }
+                Loader{
+                    id: secondpage
+                    source:"clock.qml"
+                    anchors.fill: parent
+                }
 
             }
             Item {
                 Loader{
                     id: thirdpage
                     source:"calender.qml"
+                    anchors.fill: parent
+                }
+            }
+            Item {
+                Loader{
+                    id: fourthpage
+                    source:"weather.qml"
                     anchors.fill: parent
                 }
             }
@@ -110,8 +119,8 @@ ApplicationWindow {
             anchors.leftMargin: 50
         }
     }
-
 }
+
 
 
 

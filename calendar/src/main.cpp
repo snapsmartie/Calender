@@ -52,13 +52,26 @@
 
 #include "qtquickcontrolsapplication.h"
 #include "sqleventmodel.h"
+#include <QtQuick>
+#include <QQmlApplicationEngine>
+#include "thermostate.h"
+#include <qdebug.h>
+#include "scedule_Settings.h"
+#include "Weather.h"
+
 
 int main(int argc, char *argv[])
 {
-    QtQuickControlsApplication app(argc, argv);
+    QGuiApplication app(argc, argv);
     qmlRegisterType<SqlEventModel>("org.qtproject.examples.calendar", 1, 0, "SqlEventModel");
-    QQmlApplicationEngine engine(QUrl("qrc:/qml/main.qml"));
-    if (engine.rootObjects().isEmpty())
-        return -1;
+
+        QQuickView view;
+        view.setSource(QUrl("qrc:/qml/main.qml"));
+        QObject* rootObject = view.rootObject();
+        Thermostate dt(rootObject);
+        weather st(rootObject);
+        view.show();
+
+
     return app.exec();
 }
